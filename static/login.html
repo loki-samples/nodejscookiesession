@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charSet="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<title>demo page</title>
+		<style>
+			form.form-example {
+				display: table;
+			}
+
+			div.form-example {
+				display: table-row;
+			}
+
+			label, input {
+				display: table-cell;
+				margin-bottom: 10px;
+			}
+
+			label {
+				padding-right: 10px;
+			}
+		</style>
+
+	</head>
+	
+	<body>
+		<form action="/login" method="POST" class="form-example">
+		<div class="form-example">
+    <label for="name">user name: </label>
+    <input type="text" name="name" id="name" required>
+  </div>
+  <div class="form-example">
+    <label for="password">password: </label>
+    <input type="password" name="password" id="password" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="login">
+  </div>
+		</form>
+	</body>
+</html>
